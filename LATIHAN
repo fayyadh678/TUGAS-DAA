@@ -1,0 +1,136 @@
+latihan 1
+print("hello word") 
+print("Nama Saya Fayyadh")
+print("Nim Saya 2023071065")
+
+Latihan 2
+if 5 > 2:
+  print("Five is greater than two!")
+
+Latihan 3
+x=5
+y="jhon"
+print(x)
+print(y)
+
+Latihan 3
+x=4
+x="sally"
+print(x)
+
+Latihan 4
+myList = [10, 20, 30, 40]  # Contoh list
+getFirst = myList[0]  # Mendapatkan elemen pertama
+getSecond = myList[1]  # Mendapatkan elemen kedua
+
+print(getFirst)  # Output: 10
+print(getSecond)  # Output: 20
+
+Latihan 5
+myList = [10, 20, 30, 40]  # Contoh list
+getFirst = myList[0]  # Mendapatkan elemen pertama
+getLast = myList[-1]  # Mendapatkan elemen terakhir
+
+print(getFirst)  # Output: 10
+print(getLast)   # Output: 40
+
+
+Latihan 5
+def getKali(myList):
+    hasil = 1  # Mulai dengan 1 karena ini operasi perkalian
+    for num in myList:
+        hasil *= num
+    return hasil
+
+# Contoh penggunaan
+myList = [1, 2, 3, 4]
+hasil_kali = getKali(myList)
+print(hasil_kali)  # Output: 24
+
+
+Latihan 6
+def getBagi(angka_list):
+    # Mulai dengan nilai pertama dari list sebagai nilai awal
+    hasil = angka_list[0]
+    
+    # Lakukan pembagian dengan semua angka berikutnya
+    for angka in angka_list[1:]:
+        hasil /= angka
+    
+    return hasil
+
+# Contoh penggunaan
+angka_list = [100, 5, 2]  # Contoh angka
+hasil = getBagi(angka_list)
+print("Hasil pembagian:", hasil)
+
+
+Latihan 7
+def getBagi(angka_list):
+    # Mulai dengan nilai pertama dari list sebagai nilai awal
+    hasil = angka_list[0]
+    
+    # Lakukan pembagian dengan semua angka berikutnya
+    for angka in angka_list[1:]:
+        hasil /= angka
+    
+    return hasil
+
+# Contoh penggunaan
+angka_list = [100, 5, 2]  # Contoh angka
+hasil = getBagi(angka_list)
+print("Hasil pembagian:", hasil)
+
+
+Latihan 8 
+def getBagiHimpunan(himpunan1, himpunan2):
+    # Pastikan kedua himpunan memiliki ukuran yang sama
+    if len(himpunan1) != len(himpunan2):
+        return "Error: Himpunan harus memiliki ukuran yang sama"
+    
+    hasil_bagi = []
+    
+    # Lakukan pembagian per elemen
+    for angka1, angka2 in zip(himpunan1, himpunan2):
+        if angka2 == 0:
+            return "Error: Pembagian dengan nol tidak diizinkan"
+        hasil_bagi.append(angka1 / angka2)
+    
+    return hasil_bagi
+
+# Contoh penggunaan
+himpunan1 = [100, 50, 25]
+himpunan2 = [5, 2, 5]
+hasil = getBagiHimpunan(himpunan1, himpunan2)
+print("Hasil pembagian per elemen:", hasil)
+
+
+Latihan 9 
+# Fungsi untuk mengurangi dua himpunan angka
+def subtract_sets(set1, set2):
+    # Mengurangi set2 dari set1
+    result_set = set1 - set2
+    return result_set
+
+# Fungsi untuk menjumlahkan angka dalam himpunan
+def get_sum(number_set):
+    # Menghitung jumlah elemen dalam himpunan
+    return sum(number_set)
+
+# Contoh penggunaan
+set1 = {1, 2, 3, 4, 5}
+set2 = {3, 4, 5, 6, 7}
+
+# Mengurangi himpunan
+result_set = subtract_sets(set1, set2)
+print("Hasil pengurangan himpunan:", result_set)
+
+# Menjumlahkan elemen dalam hasil pengurangan
+total_sum = get_sum(result_set)
+print("Jumlah elemen dalam himpunan hasil pengurangan:", total_sum)
+
+
+
+
+
+
